@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 glass">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="font-bold text-xl gradient-text">
-          Kanchana.dev
+          Kanchana Koralage
         </h1>
 
         <div className="hidden md:flex gap-6">
