@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Hero from "./pages/Hero";
+import Navbar from "./pages/Navbar";
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline text-center">
-      Hello world!
-    </h1>
+    <main>
+      <Navbar/>
+      <Hero/>
+    </main>
   );
 }
