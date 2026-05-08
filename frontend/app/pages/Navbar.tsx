@@ -5,9 +5,9 @@ const links = [
   "Skills",
   "Projects",
   "Journal",
-  "Career",
+  "Experience",
   "Certificates",
-  "Resume",
+  "Career",
   "Contact",
 ];
 
