@@ -31,10 +31,7 @@ export default function Certifications() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold">
-            Certifications &{" "}
-            <span className="gradient-text">
-              Learning
-            </span>
+            Certifications & <span className="gradient-text">Learning</span>
           </h2>
         </motion.div>
 
@@ -61,6 +58,7 @@ export default function Certifications() {
                   src={cert.image}
                   alt={cert.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition duration-500"
                 />
 
@@ -99,7 +97,6 @@ export default function Certifications() {
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-500 hover:opacity-90 transition"
                 >
                   <ExternalLink size={18} />
-
                   View Credential
                 </a>
               </div>
@@ -117,10 +114,7 @@ export default function Certifications() {
         >
           <div className="glass rounded-3xl p-10 text-center">
             <h3 className="text-3xl font-bold mb-6">
-              Lifelong{" "}
-              <span className="gradient-text">
-                Learning Journey
-              </span>
+              Lifelong <span className="gradient-text">Learning Journey</span>
             </h3>
 
             <p className="text-gray-300 max-w-4xl mx-auto leading-8 text-lg">

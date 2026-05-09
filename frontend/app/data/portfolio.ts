@@ -732,6 +732,21 @@ export const careerPlans = [
 ];
 
 export const certifications = [
+
+  {
+    title: "Linux - Level 1",
+
+    issuer: "KodeKloud",
+
+    year: "2025",
+
+    image: "/certifications/linux.png",
+
+    credential: "https://engineer.kodekloud.com/certificate-verification/11a009ff-dd8e-47b3-a079-795324e163c7",
+
+    description:
+      "This certification gave me practical, hands-on experience working in a simulated enterprise Linux environment. not just theory",
+  },
   {
     title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
 
@@ -739,9 +754,9 @@ export const certifications = [
 
     year: "2025",
 
-    image: "/certificates/oci-devops.png",
+    image: "/certifications/oracledevops.jpg",
 
-    credential: "https://catalog-education.oracle.com/",
+    credential: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=368A7098EA6DD0980960A37BB693684AF3EDACBFE1C65163D5A714F3DB6BEF7B",
 
     description:
       "Validated knowledge in DevOps practices, CI/CD pipelines, automation, monitoring, and cloud-native deployment strategies using Oracle Cloud Infrastructure.",
@@ -754,9 +769,9 @@ export const certifications = [
 
     year: "2025",
 
-    image: "/certificates/oci-foundations.png",
+    image: "/certifications/oracle.png",
 
-    credential: "https://catalog-education.oracle.com/",
+    credential: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D5647B355DA37B44C8ACFEE2E8A44F4AA5C4FAD5F7505E07377A6866DF510555",
 
     description:
       "Demonstrated foundational knowledge of cloud concepts, OCI services, networking, security, and cloud architecture principles.",
@@ -769,9 +784,9 @@ export const certifications = [
 
     year: "2025",
 
-    image: "/certificates/aws-builder.png",
+    image: "/certifications/awscloud.png",
 
-    credential: "https://aws.amazon.com/training/",
+    credential: "https://www.credly.com/badges/0294eded-0e88-4f25-9262-543532190230/linked_in?t=t3i0qj",
 
     description:
       "Completed cloud application deployment and management training using AWS services and modern web application architectures.",
@@ -784,12 +799,102 @@ export const certifications = [
 
     year: "2025",
 
-    image: "/certificates/devops.png",
+    image: "/certifications/kodeklouddevops.jpg",
 
-    credential: "https://kodekloud.com/",
+    credential: "https://engineer.kodekloud.com/certificate-verification/df63d657-51cf-4a9a-a700-99b05be9114f",
+
+    description:
+      "I have completed the 100 Days of DevOps challenge by KodeKloud a fully hands-on program designed around real-world DevOps tasks and industry-relevant scenarios.",
+  },
+
+   {
+    title: "Git with GitLab and BitBucket",
+
+    issuer: "LearnKarts",
+
+    year: "2025",
+
+    image: "/certifications/bitbucket.jpg",
+
+    credential: "https://www.coursera.org/account/accomplishments/verify/U6PJC12BVM81",
 
     description:
       "Hands-on DevOps learning program covering Linux, Docker, Kubernetes, Jenkins, Terraform, CI/CD, and cloud-native technologies.",
+  },
+
+  {
+    title: "Learn DevOps: CI/CD with Jenkins using Pipelines and Docker",
+
+    issuer: "Udemy",
+
+    year: "2025",
+
+    image: "/certifications/jenkins.jpg",
+
+    credential: "https://www.udemy.com/certificate/UC-e10a48de-ec35-4136-bd36-b58e9be76931/",
+
+    description:
+      "I've completed the “Learn DevOps: CI/CD with Jenkins using Pipelines and Docker” course. Looking forward to applying this knowledge in real-world CI/CD pipelines and containerized environments.",
+  },
+
+  {
+    title: "Back-End Development with .NET",
+
+    issuer: "Microsoft",
+
+    year: "2025",
+
+    image: "/certifications/dotnet.jpg",
+
+    credential: "https://www.coursera.org/account/accomplishments/verify/ZEAD242VMLIK",
+
+    description:
+      "I have completed my certification in .NET and Its Architecture. Gained a solid foundation in .NET, C#, and key development tools. Excited to apply these skills in real-world projects.",
+  },
+
+  {
+    title: "Introduction to Programming With C#",
+
+    issuer: "Microsoft",
+
+    year: "2025",
+
+    image: "/certifications/csharp.jpg",
+
+    credential: "https://www.coursera.org/account/accomplishments/verify/DIVH4D85908A",
+
+    description:
+      "I have completed the Introduction to Programming with C# course by Microsoft on Coursera.This course helped me understand the fundamentals of the .NET environment, how to set up and work with Visual Studio Code for .NET projects, and best practices for project structure and organization.",
+  },
+
+  {
+    title: "Foundations of Coding Full-Stack",
+
+    issuer: "Microsoft",
+
+    year: "2025",
+
+    image: "/certifications/fullstack.jpg",
+
+    credential: "https://www.coursera.org/account/accomplishments/verify/IWGAA1FMD6TD",
+
+    description:
+      "I have completed the Foundations of Coding Full Stack certificate on Coursera. I gained valuable insights into full-stack development, Git/GitHub, and project planning—another step forward in my journey as a Full Stack Developer.",
+  },
+
+  {
+    title: "AWS Project",
+
+    issuer: "Great Learning Academy",
+
+    year: "2025",
+
+    image: "/certifications/awsproject.png",
+
+    credential: "https://www.mygreatlearning.com/certificate/FRVQRQZX",
+
+    description:
+      "I have successfully completed the AWS Project course offered by Great Learning Academy.",
   },
 ];
 

@@ -2,12 +2,12 @@
 
 const links = [
   "About",
+  "Experience",
   "Skills",
   "Projects",
-  "Journal",
-  "Experience",
   "Certificates",
   "Career",
+   "Journal",
   "Contact",
 ];
 
