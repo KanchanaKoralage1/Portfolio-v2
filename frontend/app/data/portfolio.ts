@@ -176,93 +176,215 @@ export const skillCategories = [
 
 
 
-export const projects = [
+export const projectSections = [
   {
-    title: "Cloud-Native CI/CD Pipeline",
+    category: "DevOps & Cloud Projects",
+
     description:
-      "Built and deployed a containerized MERN application using Kubernetes, Docker, ArgoCD, Helm, Prometheus, and Grafana with full GitOps workflow.",
+      "Projects focused on CI/CD pipelines, cloud-native architectures, Kubernetes, Docker, infrastructure automation, monitoring, and scalable deployments.",
 
-    tech: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Docker",
-      "Kubernetes",
-      "ArgoCD",
-      "GitHub Actions",
-      "Prometheus",
-      "Grafana",
+    projects: [
+      {
+        title: "Python Task API with DevOps",
+
+        description:
+          [
+            "Built REST API using Python (FastAPI) with CRUD operations.",
+            "Containerized the application using Docker to ensure consistent build and runtime environments.",
+            "Designed and implemented an end-to-end CI/CD pipeline using Jenkins, automating build, versioning, and deployment processes.",
+            "Implemented Kubernetes based deployment using Minikube, then upgraded to Azure Kubernetes Service (AKS).",
+            "Enabled rolling updates and rollback with versioned Docker images."
+          ],
+
+        tech: [
+          "Python (FastAPI)",
+          "Docker",
+          "Kubernetes",
+          "Jenkins",
+          "AKS (Azure Kubernetes Service)",
+          "Minikube"
+        ],
+
+        github: "https://github.com/KanchanaKoralage1/python-task-api-with-devops",
+
+        live: "http://20.195.60.68:8000/",
+
+        image: "/projects/devops.jpg",
+      },
+
+      {
+        title: "Cloud-Native CI/CD Pipeline with GitOps and Monitoring",
+
+        description:
+          ["Built and deployed a containerized MERN app on Kubernetes (Minikube) using Docker.",
+            "Implemented CI pipeline using GitHub Actions for build, test, and image creation.",
+            "Set up GitOps-based CD using ArgoCD for automated Kubernetes deployments.",
+            "Used Helm for managing Kubernetes manifests across multiple environments (dev, staging, prod).",
+            "Integrated Prometheus and Grafana for monitoring and dashboards.",
+            "Fixed runtime issues like pod restarts using Kubernetes Persistent Volumes.",
+            "Configured Nginx for routing between frontend and backend services."
+
+          ],
+
+        tech: [
+          "React",
+          "TypeScript",
+          "Node.js",
+          "Express.js",
+          "Docker",
+          "Kubernetes",
+          "Helm",
+          "Nginx",
+          "ArgoCD",
+          "GitHub Actions",
+          "Prometheus",
+          "Grafana",
+          "Bash Scripting",
+        ],
+
+        github: "https://github.com/KanchanaKoralage1/ArgoCD-Project",
+
+        live: "#",
+
+        image: "/projects/monitoring.jpg",
+      },
     ],
-
-    github: "https://github.com/YOUR_USERNAME/project-1",
-
-    live: "#",
-
-    image: "/projects/devops.jpg",
   },
 
   {
-    title: "ATS System with Machine Learning",
+    category: "Software Engineering Projects",
+
     description:
-      "Full-stack ATS platform that analyzes resumes against job descriptions using TF-IDF and machine learning role classification.",
+      "Projects related to full-stack development, scalable backend systems, frontend engineering, authentication systems, and software architecture.",
 
-    tech: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "MongoDB",
-      "Python",
-      "Machine Learning",
-      "Tailwind CSS",
+    projects: [
+
+        {
+        title: " Movie Ticket Booking Web App",
+
+        description:
+          ["Developed a full-stack movie ticket booking web application where users can browse movies, sign up/login, manage profiles, and book tickets, while admins can add and manage movie listings. ",
+          "Deployed on Azure Infrastructure and implemented end to end CI/CD using GitHub Actions with automated Docker builds and zero downtime deployments to Azure VM on every code push.",
+          "Configured cloud infrastructure including Azure SQL Database, Linux VM with Docker compose, Nginx reverse proxy, NSG firewall rules and SSH based authentication. "
+        ],
+
+        tech: [
+          "React",
+          "TypeScript",
+          "C#",
+          ".NET 8",
+          "Azure (VM, SQL Database)",
+          "Nginx",
+          "Docker",
+          "GitHub Actions",
+          "REST APIs"
+        ],
+
+        github: "https://github.com/KanchanaKoralage1/ASP.NET_with_React",
+
+        live: "http://20.212.19.81/",
+
+        image: "/projects/ats.jpg",
+      },
+
+      {
+        title: "E-commerce Web Application with .NET | Blazor ",
+
+        description:
+          ["A full-stack e-commerce web application developed to deliver a secure and seamless online shopping experience. ",
+          "Implemented product browsing, shopping cart, order tracking, Stripe payment integration, and authentication using Google and Facebook OAuth 2.0 with role-based access control. ",
+          
+        ],
+
+        tech: [
+          "C#",
+          ".NET 8",
+          "Blazor",
+          "Entity Framework Core",
+          "Stripe API",
+          "GitHub Actions",
+          "Bootstrap 5."
+        ],
+
+        github: "https://github.com/KanchanaKoralage1/Ecommerce_Web_App_with_.NET_and_Blazor",
+
+        live: "#",
+
+        image: "/projects/ats.jpg",
+      },
+
+      {
+        title: "ATS System with Machine Learning",
+
+        description:
+          ["Developed a full-stack Application Tracking System (ATS) that analyses resume against job descriptions and provides ATS scores, skill matching, and role classification using machine learning.",
+          "Implemented features including resume upload, CV filtering, candidate management, user authentication, profile management with image uploads, and a responsive dashboard UI."],
+
+        tech: [
+          "React",
+          "TypeScript",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Python",
+          "Machine Learning",
+          "Tailwind CSS",
+          "REST APIs"
+        ],
+
+        github: "https://github.com/KanchanaKoralage1/Application-tracking-system",
+
+        live: "#",
+
+        image: "/projects/ats.jpg",
+      },
+
+      {
+        title: "Social Media Platform",
+
+        description:
+          ["Developed a responsive full-stack social media platform featuring JWT-based authentication, Google OAuth 2.0 login, and real-time messaging using WebSockets.",
+            "Implemented core social features including post creation and editing, comments, likes, shares, follow/unfollow functionality, and real-time notifications. "
+          ],
+
+        tech: [
+          "Java",
+          "Spring Boot",
+          "React",
+          "MySQL",
+          "JWT",
+          "OAuth2.0",
+          "WebSocket",
+          "Tailwind CSS"
+        ],
+
+        github: "https://github.com/KanchanaKoralage1/Social-Media-App",
+
+        live: "#",
+
+        image: "/projects/social.jpg",
+      },
+
+      {
+        title: "Book Store Mobile App using React Native",
+
+        description:
+          ["A mobile app where users can sign up, log in, and share book recommendations. Users can add, edit, or delete book posts with images and ratings."],
+
+        tech: [
+          "Typescript",
+          "React Native",
+          "MongoDB",
+          "Tailwind CSS",
+        ],
+
+        github: "https://github.com/KanchanaKoralage1/Book-store-Mobile-app",
+
+        live: "#",
+
+        image: "/projects/movie.jpg",
+      },
     ],
-
-    github: "https://github.com/YOUR_USERNAME/project-2",
-
-    live: "#",
-
-    image: "/projects/ats.jpg",
-  },
-
-  {
-    title: "Social Media Platform",
-    description:
-      "Responsive social media application with JWT authentication, Google OAuth, WebSockets, comments, likes, shares, and notifications.",
-
-    tech: [
-      "Spring Boot",
-      "React",
-      "MySQL",
-      "JWT",
-      "OAuth2",
-      "WebSocket",
-    ],
-
-    github: "https://github.com/YOUR_USERNAME/project-3",
-
-    live: "#",
-
-    image: "/projects/social.jpg",
-  },
-
-  {
-    title: "Movie Ticket Booking System",
-    description:
-      "Cloud-hosted full-stack booking platform deployed on Azure with Docker, Nginx reverse proxy, GitHub Actions CI/CD, and Azure SQL.",
-
-    tech: [
-      "React",
-      ".NET",
-      "Azure",
-      "Docker",
-      "Nginx",
-      "GitHub Actions",
-    ],
-
-    github: "https://github.com/YOUR_USERNAME/project-4",
-
-    live: "#",
-
-    image: "/projects/movie.jpg",
   },
 ];
 
