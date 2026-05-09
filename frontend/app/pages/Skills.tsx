@@ -5,10 +5,7 @@ import { skillCategories } from "../data/portfolio";
 
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="section-padding relative overflow-hidden"
-    >
+    <section id="skills" className="section-padding relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/10 blur-3xl rounded-full" />
 
@@ -28,10 +25,7 @@ export default function Skills() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold">
-            My{" "}
-            <span className="gradient-text">
-              Skills
-            </span>
+            My <span className="gradient-text">Skills</span>
           </h2>
         </motion.div>
 
@@ -56,7 +50,7 @@ export default function Skills() {
               {/* Skill Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                 {category.skills.map((skill, index) => {
-                  const Icon = skill.icon;
+                  const Icon = skill.icon ?? null;
 
                   return (
                     <motion.div
@@ -76,13 +70,19 @@ export default function Skills() {
                     >
                       {/* Icon */}
                       <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500/20 to-purple-500/20 flex items-center justify-center mb-5 group-hover:scale-110 transition">
-                        <Icon className="text-4xl text-cyan-400" />
+                        {Icon ? (
+                          <Icon className="text-4xl text-cyan-400" />
+                        ) : (
+                          <img
+                            src={skill.image}
+                            alt={skill.name}
+                            className="w-10 h-10 object-contain"
+                          />
+                        )}
                       </div>
 
                       {/* Skill Name */}
-                      <h4 className="font-semibold text-lg">
-                        {skill.name}
-                      </h4>
+                      <h4 className="font-semibold text-lg">{skill.name}</h4>
                     </motion.div>
                   );
                 })}
@@ -102,9 +102,7 @@ export default function Skills() {
           <div className="glass rounded-3xl p-8 md:p-12 text-center">
             <h3 className="text-3xl font-bold mb-6">
               Passionate About{" "}
-              <span className="gradient-text">
-                Cloud-Native Engineering
-              </span>
+              <span className="gradient-text">Cloud-Native Engineering</span>
             </h3>
 
             <p className="text-gray-300 max-w-4xl mx-auto leading-8 text-lg">

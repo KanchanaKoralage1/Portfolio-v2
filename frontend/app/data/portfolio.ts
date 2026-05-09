@@ -8,6 +8,9 @@ import {
   FaPython,
   FaLinux,
   FaAws,
+  FaWindows,
+  FaTerminal,
+  FaBitbucket,
 } from "react-icons/fa";
 
 import {
@@ -26,9 +29,183 @@ import {
   SiPrometheus,
   SiMysql,
   SiNginx,
+  SiJavascript,
+  SiAnsible,
+  SiGooglecloud,
+//   SiOracle,
+  SiGo,
+  SiSqlite,
+  SiPowers,
+  SiPostman,
+  SiSelenium,
+  SiCypress,
+//   SiSonarqube,
+  SiTrello,
+  SiExpress,
 } from "react-icons/si";
 
+import {
+  MdSecurity,
+  MdDns,
+  MdHttp,
+} from "react-icons/md";
+
+import {
+  TbBrandAzure,
+  TbTopologyStar3,
+} from "react-icons/tb";
+
+import {
+  BsShieldLockFill,
+} from "react-icons/bs";
+
 export const skillCategories = [
+  {
+    title: "Containerization & Orchestration",
+
+    skills: [
+      {
+        name: "Docker",
+        icon: FaDocker,
+      },
+
+      {
+        name: "Kubernetes",
+        icon: SiKubernetes,
+      },
+      {
+        name: "Minikube",
+        image: "/skills/minikube.svg",
+      }
+    ],
+  },
+  {
+    title: "GitOps & CI/CD Pipelines",
+
+    skills: [
+      {
+        name: "Jenkins",
+        icon: SiJenkins,
+      },
+
+      {
+        name: "ArgoCD",
+        icon: SiArgo,
+      },
+       {
+        name: "GitHub",
+        icon: FaGithub,
+      },
+    ],
+  },
+  {
+    title: "Infrastructure as Code (IaC)",
+
+    skills: [
+      {
+        name: "Terraform",
+        icon: SiTerraform,
+      },
+
+      {
+        name: "Ansible",
+        icon: SiAnsible,
+      },
+       
+    ],
+  },
+  {
+    title: "Monitoring & Observability",
+
+    skills: [
+      {
+        name: "Prometheus",
+        icon: SiPrometheus,
+      },
+
+      {
+        name: "Grafana",
+        icon: SiGrafana,
+      },
+       
+    ],
+  },
+  {
+    title: "Web Server & Networking",
+
+    skills: [
+      {
+        name: "Nginx",
+        icon: SiNginx,
+      },
+
+      {
+        name: "SSH",
+        icon: FaTerminal,
+      },
+      {
+        name: "NSG (Network Security Groups)",
+        icon: MdSecurity,
+      },
+      {
+        name: "Load Balancing",
+        icon: TbTopologyStar3,
+      },
+      {
+        name: "HTTP/HTTPS",
+        icon: MdHttp,
+      },
+      {
+        name: "DNS",
+        icon: MdDns,
+      },
+      {
+        name: "SSL/TLS",
+        icon: BsShieldLockFill,
+      },
+       
+    ],
+  },
+  {
+    title: "Operating Systems",
+
+    skills: [
+      {
+        name: "Linux",
+        icon: FaLinux,
+      },
+
+      {
+        name: "Windows",
+        icon: FaWindows,
+      },
+       
+    ],
+  },
+  {
+    title: "Cloud Platforms",
+
+    skills: [
+      {
+        name: "Microsoft Azure",
+        icon: TbBrandAzure,
+      },
+
+      {
+        name: "AWS",
+        icon: FaAws,
+      },
+      {
+        name: "Oracle Cloud Infrastructure (OCI)",
+        image: "/skills/oracle.svg",
+      },
+
+      {
+        name: "Google Cloud Platform (GCP)",
+        icon: SiGooglecloud,
+      }, 
+    ],
+  },
   {
     title: "Frontend",
 
@@ -36,6 +213,10 @@ export const skillCategories = [
       {
         name: "React",
         icon: FaReact,
+      },
+      {
+        name: "React Native",
+        image: "/skills/reactnative.svg",
       },
 
       {
@@ -49,8 +230,8 @@ export const skillCategories = [
       },
 
       {
-        name: "Tailwind CSS",
-        icon: SiTailwindcss,
+        name: "JavaScript",
+        icon: SiJavascript,
       },
     ],
   },
@@ -62,6 +243,10 @@ export const skillCategories = [
       {
         name: "Node.js",
         icon: FaNodeJs,
+      },
+      {
+        name: "Express.js",
+        icon: SiExpress,
       },
 
       {
@@ -83,47 +268,15 @@ export const skillCategories = [
         name: "Java",
         icon: FaJava,
       },
-    ],
-  },
-
-  {
-    title: "DevOps & Cloud",
-
-    skills: [
       {
-        name: "Docker",
-        icon: FaDocker,
-      },
-
-      {
-        name: "Kubernetes",
-        icon: SiKubernetes,
-      },
-
-      {
-        name: "Terraform",
-        icon: SiTerraform,
-      },
-
-      {
-        name: "Jenkins",
-        icon: SiJenkins,
-      },
-
-      {
-        name: "ArgoCD",
-        icon: SiArgo,
-      },
-
-      {
-        name: "AWS",
-        icon: FaAws,
+        name: "Go",
+        icon: SiGo,
       },
     ],
   },
 
   {
-    title: "Databases & Tools",
+    title: "Databases",
 
     skills: [
       {
@@ -142,18 +295,8 @@ export const skillCategories = [
       },
 
       {
-        name: "Prometheus",
-        icon: SiPrometheus,
-      },
-
-      {
-        name: "Grafana",
-        icon: SiGrafana,
-      },
-
-      {
-        name: "Nginx",
-        icon: SiNginx,
+        name: "SQLite",
+        icon: SiSqlite,
       },
 
       {
@@ -166,15 +309,81 @@ export const skillCategories = [
         icon: FaGithub,
       },
 
+    ],
+  },
+  {
+    title: "Scripting & Automation",
+
+    skills: [
       {
-        name: "Linux",
-        icon: FaLinux,
+        name: "Bash",
+        icon: FaTerminal,
       },
+
+      {
+        name: "Shell Scripting",
+        icon: FaTerminal,
+      },
+
+      {
+        name: "PowerShell",
+        icon: SiPowers,
+      },
+
+    ],
+  },
+  {
+    title: "Testing",
+
+    skills: [
+      {
+        name: "Postman",
+        icon: SiPostman,
+      },
+
+      {
+        name: "Selenium",
+        icon: SiSelenium,
+      },
+
+      {
+        name: "Cypress",
+        icon: SiCypress,
+      }
+
+    ],
+  },
+  {
+    title: "Tools",
+
+    skills: [
+      
+      {
+        name: "Git",
+        icon: FaGitAlt,
+      },
+
+      {
+        name: "GitHub",
+        icon: FaGithub,
+      },
+       {
+        name: "Bitbucket",
+        icon: FaBitbucket,
+      },
+
+      {
+        name: "SonarQube",
+        image: "/skills/sonarqube.svg",
+      },
+       {
+        name: "Trello",
+        icon: SiTrello,
+      },
+
     ],
   },
 ];
-
-
 
 export const projectSections = [
   {
@@ -187,14 +396,13 @@ export const projectSections = [
       {
         title: "Python Task API with DevOps",
 
-        description:
-          [
-            "Built REST API using Python (FastAPI) with CRUD operations.",
-            "Containerized the application using Docker to ensure consistent build and runtime environments.",
-            "Designed and implemented an end-to-end CI/CD pipeline using Jenkins, automating build, versioning, and deployment processes.",
-            "Implemented Kubernetes based deployment using Minikube, then upgraded to Azure Kubernetes Service (AKS).",
-            "Enabled rolling updates and rollback with versioned Docker images."
-          ],
+        description: [
+          "Built REST API using Python (FastAPI) with CRUD operations.",
+          "Containerized the application using Docker to ensure consistent build and runtime environments.",
+          "Designed and implemented an end-to-end CI/CD pipeline using Jenkins, automating build, versioning, and deployment processes.",
+          "Implemented Kubernetes based deployment using Minikube, then upgraded to Azure Kubernetes Service (AKS).",
+          "Enabled rolling updates and rollback with versioned Docker images.",
+        ],
 
         tech: [
           "Python (FastAPI)",
@@ -202,10 +410,11 @@ export const projectSections = [
           "Kubernetes",
           "Jenkins",
           "AKS (Azure Kubernetes Service)",
-          "Minikube"
+          "Minikube",
         ],
 
-        github: "https://github.com/KanchanaKoralage1/python-task-api-with-devops",
+        github:
+          "https://github.com/KanchanaKoralage1/python-task-api-with-devops",
 
         live: "http://20.195.60.68:8000/",
 
@@ -215,16 +424,15 @@ export const projectSections = [
       {
         title: "Cloud-Native CI/CD Pipeline with GitOps and Monitoring",
 
-        description:
-          ["Built and deployed a containerized MERN app on Kubernetes (Minikube) using Docker.",
-            "Implemented CI pipeline using GitHub Actions for build, test, and image creation.",
-            "Set up GitOps-based CD using ArgoCD for automated Kubernetes deployments.",
-            "Used Helm for managing Kubernetes manifests across multiple environments (dev, staging, prod).",
-            "Integrated Prometheus and Grafana for monitoring and dashboards.",
-            "Fixed runtime issues like pod restarts using Kubernetes Persistent Volumes.",
-            "Configured Nginx for routing between frontend and backend services."
-
-          ],
+        description: [
+          "Built and deployed a containerized MERN app on Kubernetes (Minikube) using Docker.",
+          "Implemented CI pipeline using GitHub Actions for build, test, and image creation.",
+          "Set up GitOps-based CD using ArgoCD for automated Kubernetes deployments.",
+          "Used Helm for managing Kubernetes manifests across multiple environments (dev, staging, prod).",
+          "Integrated Prometheus and Grafana for monitoring and dashboards.",
+          "Fixed runtime issues like pod restarts using Kubernetes Persistent Volumes.",
+          "Configured Nginx for routing between frontend and backend services.",
+        ],
 
         tech: [
           "React",
@@ -258,14 +466,13 @@ export const projectSections = [
       "Projects related to full-stack development, scalable backend systems, frontend engineering, authentication systems, and software architecture.",
 
     projects: [
-
-        {
+      {
         title: " Movie Ticket Booking Web App",
 
-        description:
-          ["Developed a full-stack movie ticket booking web application where users can browse movies, sign up/login, manage profiles, and book tickets, while admins can add and manage movie listings. ",
+        description: [
+          "Developed a full-stack movie ticket booking web application where users can browse movies, sign up/login, manage profiles, and book tickets, while admins can add and manage movie listings. ",
           "Deployed on Azure Infrastructure and implemented end to end CI/CD using GitHub Actions with automated Docker builds and zero downtime deployments to Azure VM on every code push.",
-          "Configured cloud infrastructure including Azure SQL Database, Linux VM with Docker compose, Nginx reverse proxy, NSG firewall rules and SSH based authentication. "
+          "Configured cloud infrastructure including Azure SQL Database, Linux VM with Docker compose, Nginx reverse proxy, NSG firewall rules and SSH based authentication. ",
         ],
 
         tech: [
@@ -277,7 +484,7 @@ export const projectSections = [
           "Nginx",
           "Docker",
           "GitHub Actions",
-          "REST APIs"
+          "REST APIs",
         ],
 
         github: "https://github.com/KanchanaKoralage1/ASP.NET_with_React",
@@ -290,10 +497,9 @@ export const projectSections = [
       {
         title: "E-commerce Web Application with .NET | Blazor ",
 
-        description:
-          ["A full-stack e-commerce web application developed to deliver a secure and seamless online shopping experience. ",
+        description: [
+          "A full-stack e-commerce web application developed to deliver a secure and seamless online shopping experience. ",
           "Implemented product browsing, shopping cart, order tracking, Stripe payment integration, and authentication using Google and Facebook OAuth 2.0 with role-based access control. ",
-          
         ],
 
         tech: [
@@ -303,10 +509,11 @@ export const projectSections = [
           "Entity Framework Core",
           "Stripe API",
           "GitHub Actions",
-          "Bootstrap 5."
+          "Bootstrap 5.",
         ],
 
-        github: "https://github.com/KanchanaKoralage1/Ecommerce_Web_App_with_.NET_and_Blazor",
+        github:
+          "https://github.com/KanchanaKoralage1/Ecommerce_Web_App_with_.NET_and_Blazor",
 
         live: "#",
 
@@ -316,9 +523,10 @@ export const projectSections = [
       {
         title: "ATS System with Machine Learning",
 
-        description:
-          ["Developed a full-stack Application Tracking System (ATS) that analyses resume against job descriptions and provides ATS scores, skill matching, and role classification using machine learning.",
-          "Implemented features including resume upload, CV filtering, candidate management, user authentication, profile management with image uploads, and a responsive dashboard UI."],
+        description: [
+          "Developed a full-stack Application Tracking System (ATS) that analyses resume against job descriptions and provides ATS scores, skill matching, and role classification using machine learning.",
+          "Implemented features including resume upload, CV filtering, candidate management, user authentication, profile management with image uploads, and a responsive dashboard UI.",
+        ],
 
         tech: [
           "React",
@@ -329,10 +537,11 @@ export const projectSections = [
           "Python",
           "Machine Learning",
           "Tailwind CSS",
-          "REST APIs"
+          "REST APIs",
         ],
 
-        github: "https://github.com/KanchanaKoralage1/Application-tracking-system",
+        github:
+          "https://github.com/KanchanaKoralage1/Application-tracking-system",
 
         live: "#",
 
@@ -342,10 +551,10 @@ export const projectSections = [
       {
         title: "Social Media Platform",
 
-        description:
-          ["Developed a responsive full-stack social media platform featuring JWT-based authentication, Google OAuth 2.0 login, and real-time messaging using WebSockets.",
-            "Implemented core social features including post creation and editing, comments, likes, shares, follow/unfollow functionality, and real-time notifications. "
-          ],
+        description: [
+          "Developed a responsive full-stack social media platform featuring JWT-based authentication, Google OAuth 2.0 login, and real-time messaging using WebSockets.",
+          "Implemented core social features including post creation and editing, comments, likes, shares, follow/unfollow functionality, and real-time notifications. ",
+        ],
 
         tech: [
           "Java",
@@ -355,7 +564,7 @@ export const projectSections = [
           "JWT",
           "OAuth2.0",
           "WebSocket",
-          "Tailwind CSS"
+          "Tailwind CSS",
         ],
 
         github: "https://github.com/KanchanaKoralage1/Social-Media-App",
@@ -368,15 +577,11 @@ export const projectSections = [
       {
         title: "Book Store Mobile App using React Native",
 
-        description:
-          ["A mobile app where users can sign up, log in, and share book recommendations. Users can add, edit, or delete book posts with images and ratings."],
-
-        tech: [
-          "Typescript",
-          "React Native",
-          "MongoDB",
-          "Tailwind CSS",
+        description: [
+          "A mobile app where users can sign up, log in, and share book recommendations. Users can add, edit, or delete book posts with images and ratings.",
         ],
+
+        tech: ["Typescript", "React Native", "MongoDB", "Tailwind CSS"],
 
         github: "https://github.com/KanchanaKoralage1/Book-store-Mobile-app",
 
@@ -387,7 +592,6 @@ export const projectSections = [
     ],
   },
 ];
-
 
 export const experiences = [
   {
@@ -420,7 +624,6 @@ export const experiences = [
     ],
   },
 ];
-
 
 export const reflectiveJournal = [
   {
@@ -475,7 +678,6 @@ export const reflectiveJournal = [
   },
 ];
 
-
 export const careerPlans = [
   {
     phase: "Short-Term Goals",
@@ -529,7 +731,6 @@ export const careerPlans = [
   },
 ];
 
-
 export const certifications = [
   {
     title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
@@ -540,8 +741,7 @@ export const certifications = [
 
     image: "/certificates/oci-devops.png",
 
-    credential:
-      "https://catalog-education.oracle.com/",
+    credential: "https://catalog-education.oracle.com/",
 
     description:
       "Validated knowledge in DevOps practices, CI/CD pipelines, automation, monitoring, and cloud-native deployment strategies using Oracle Cloud Infrastructure.",
@@ -556,8 +756,7 @@ export const certifications = [
 
     image: "/certificates/oci-foundations.png",
 
-    credential:
-      "https://catalog-education.oracle.com/",
+    credential: "https://catalog-education.oracle.com/",
 
     description:
       "Demonstrated foundational knowledge of cloud concepts, OCI services, networking, security, and cloud architecture principles.",
@@ -572,8 +771,7 @@ export const certifications = [
 
     image: "/certificates/aws-builder.png",
 
-    credential:
-      "https://aws.amazon.com/training/",
+    credential: "https://aws.amazon.com/training/",
 
     description:
       "Completed cloud application deployment and management training using AWS services and modern web application architectures.",
@@ -588,14 +786,12 @@ export const certifications = [
 
     image: "/certificates/devops.png",
 
-    credential:
-      "https://kodekloud.com/",
+    credential: "https://kodekloud.com/",
 
     description:
       "Hands-on DevOps learning program covering Linux, Docker, Kubernetes, Jenkins, Terraform, CI/CD, and cloud-native technologies.",
   },
 ];
-
 
 export const contactInfo = {
   email: "itsmekanchanakoralage@gmail.com",
