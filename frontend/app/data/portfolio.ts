@@ -418,7 +418,7 @@ export const projectSections = [
 
         live: "http://20.195.60.68:8000/",
 
-        image: "/projects/devops.jpg",
+        image: "/project/pythontaskdevops.jpg",
       },
 
       {
@@ -454,7 +454,7 @@ export const projectSections = [
 
         live: "#",
 
-        image: "/projects/monitoring.jpg",
+        image: "/project/argocd.jpg",
       },
     ],
   },
@@ -491,7 +491,7 @@ export const projectSections = [
 
         live: "http://20.212.19.81/",
 
-        image: "/projects/ats.jpg",
+        image: "/project/movie.jpg",
       },
 
       {
@@ -517,7 +517,7 @@ export const projectSections = [
 
         live: "#",
 
-        image: "/projects/ats.jpg",
+        image: "/project/blazor.jpg",
       },
 
       {
@@ -545,7 +545,7 @@ export const projectSections = [
 
         live: "#",
 
-        image: "/projects/ats.jpg",
+        image: "/project/ats.png",
       },
 
       {
@@ -571,7 +571,43 @@ export const projectSections = [
 
         live: "#",
 
-        image: "/projects/social.jpg",
+        image: "/project/social.png",
+      },
+
+      {
+        title: "Task Management WebApp",
+
+        description: [
+          "A full-stack web application built to streamline team task assignment, tracking, and management." ,
+          "Designed with a responsive UI and secure role-based access for both users and admins, it enhances collaboration and productivity across all devices.",
+          " Users can login and signup with their google account (OAuth 2.0) And Users can generate documents as well.",
+        ],
+
+        tech: ["JavaScript", "React", "MongoDB", "Tailwind CSS"],
+
+        github: "https://github.com/KanchanaKoralage1/Task-Management-WebApp",
+
+        live: "#",
+
+        image: "/project/task.png",
+      },
+
+      {
+        title: "Library management system",
+
+        description: [
+          "This is my recently created full-stack web application that allows users to manage a digital library efficiently.",
+           "Features include user authentication, book search, CRUD operations for books, image uploads, and a responsive UI.",
+            "Built using the MERN stack with Cloudinary for image storage.",
+        ],
+
+        tech: ["JavaScript", "React", "MongoDB", "Tailwind CSS", "Cloudinary"],
+
+        github: "https://github.com/KanchanaKoralage1/Library-management",
+
+        live: "#",
+
+        image: "/project/library.png",
       },
 
       {
@@ -587,7 +623,7 @@ export const projectSections = [
 
         live: "#",
 
-        image: "/projects/movie.jpg",
+        image: "/project/book.png",
       },
     ],
   },
@@ -903,7 +939,7 @@ export const contactInfo = {
 
   phone: "+94 70 497 5336",
 
-  location: "Sri Lanka",
+  location: "Maharagama, Sri Lanka",
 
   github: "https://github.com/YOUR_USERNAME",
 
