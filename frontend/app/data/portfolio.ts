@@ -935,15 +935,17 @@ export const certifications = [
 ];
 
 export const contactInfo = {
-  email: "itsmekanchanakoralage@gmail.com",
+  Email: "itsmekanchanakoralage@gmail.com",
 
-  phone: "+94 70 497 5336",
+  Phone: "+94 70 497 5336",
 
-  location: "Maharagama, Sri Lanka",
+  Location: "Maharagama, Sri Lanka",
 
-  github: "https://github.com/YOUR_USERNAME",
+  GitHub: "https://github.com/KanchanaKoralage1",
 
-  linkedin: "https://linkedin.com/in/YOUR_LINKEDIN",
+  LinkedIn: "https://www.linkedin.com/in/kanchana-koralage/",
 
-  portfolio: "https://yourportfolio.com",
+  Facebook: "https://www.facebook.com/kanchana.koralage.58",
+
+  Instagram: "https://www.instagram.com/kanchana_koralage/"
 };

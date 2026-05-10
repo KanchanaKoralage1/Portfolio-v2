@@ -10,7 +10,7 @@ import {
   Send,
 } from "lucide-react";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 import { contactInfo } from "../data/portfolio";
 
@@ -81,10 +81,10 @@ export default function Contact() {
                   </p>
 
                   <a
-                    href={`mailto:${contactInfo.email}`}
+                    href={`mailto:${contactInfo.Email}`}
                     className="text-lg hover:text-cyan-400 transition"
                   >
-                    {contactInfo.email}
+                    {contactInfo.Email}
                   </a>
                 </div>
               </div>
@@ -101,10 +101,10 @@ export default function Contact() {
                   </p>
 
                   <a
-                    href={`tel:${contactInfo.phone}`}
+                    href={`tel:${contactInfo.Phone}`}
                     className="text-lg hover:text-cyan-400 transition"
                   >
-                    {contactInfo.phone}
+                    {contactInfo.Phone}
                   </a>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function Contact() {
                   </p>
 
                   <p className="text-lg">
-                    {contactInfo.location}
+                    {contactInfo.Location}
                   </p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function Contact() {
             {/* Socials */}
             <div className="flex items-center gap-5 mt-10">
               <a
-                href={contactInfo.github}
+                href={contactInfo.GitHub}
                 target="_blank"
                 className="w-14 h-14 rounded-2xl glass flex items-center justify-center hover:border-cyan-400/40 hover:-translate-y-1 transition"
               >
@@ -138,7 +138,7 @@ export default function Contact() {
               </a>
 
               <a
-                href={contactInfo.linkedin}
+                href={contactInfo.LinkedIn}
                 target="_blank"
                 className="w-14 h-14 rounded-2xl glass flex items-center justify-center hover:border-cyan-400/40 hover:-translate-y-1 transition"
               >
@@ -146,12 +146,21 @@ export default function Contact() {
               </a>
 
               <a
-                href={contactInfo.portfolio}
+                href={contactInfo.Facebook}
                 target="_blank"
                 className="w-14 h-14 rounded-2xl glass flex items-center justify-center hover:border-cyan-400/40 hover:-translate-y-1 transition"
               >
-                <Globe size={24} />
+                <FaFacebook size={24} />
               </a>
+
+              <a
+                href={contactInfo.Instagram}
+                target="_blank"
+                className="w-14 h-14 rounded-2xl glass flex items-center justify-center hover:border-cyan-400/40 hover:-translate-y-1 transition"
+              >
+                <FaInstagram size={24} />
+              </a>
+
             </div>
           </motion.div>
 

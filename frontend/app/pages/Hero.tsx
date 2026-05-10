@@ -12,10 +12,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-bold leading-tight"
         >
-          Hi, I'm{" "}
-          <span className="gradient-text">
-            Kanchana Koralage
-          </span>
+          Hi, I'm <span className="gradient-text">Kanchana Koralage</span>
         </motion.h1>
 
         <motion.p
@@ -24,9 +21,13 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="mt-6 text-gray-300 text-lg md:text-xl leading-relaxed"
         >
-          Final-year IT undergraduate passionate about
-          DevOps, Cloud Engineering, Full-Stack Development,
-          Kubernetes, CI/CD and scalable applications.
+          Final-year IT undergraduate with hands-on experience in full-stack
+          development and DevOps practices. I am skilled in building and
+          deploying containerized applications using Docker, Kubernetes, and
+          Helm. Experienced in implementing CI/CD pipelines with GitHub Actions,
+          Jenkins and ArgoCD, and monitoring applications using Prometheus and
+          Grafana. Seeking a DevOps or Software Engineering internship to apply
+          technical skills and contribute to real-world projects.
         </motion.p>
 
         <div className="mt-10 flex gap-4 justify-center">
@@ -38,7 +39,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="/cv.pdf"
+            href="/resume/KanchanaKoralageCV.pdf"
             className="px-6 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition"
           >
             Download CV
