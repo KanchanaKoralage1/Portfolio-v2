@@ -6,7 +6,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  Globe,
   Send,
 } from "lucide-react";
 
@@ -57,7 +56,7 @@ export default function Contact() {
             className="glass rounded-3xl p-8 md:p-10"
           >
             <h3 className="text-3xl font-bold mb-6">
-              Let's Build Something Amazing
+              Let&apos;s Build Something Amazing
             </h3>
 
             <p className="text-gray-300 leading-8 mb-10">

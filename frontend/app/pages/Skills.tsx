@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { skillCategories } from "../data/portfolio";
+import Image from "next/image";
 
 export default function Skills() {
   return (
@@ -73,10 +74,12 @@ export default function Skills() {
                         {Icon ? (
                           <Icon className="text-4xl text-cyan-400" />
                         ) : (
-                          <img
-                            src={skill.image}
+                          <Image
+                            src={skill.image!}
                             alt={skill.name}
-                            className="w-10 h-10 object-contain"
+                            width={40}
+                            height={40}
+                            className="object-contain"
                           />
                         )}
                       </div>
