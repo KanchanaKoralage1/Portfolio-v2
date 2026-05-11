@@ -1,13 +1,13 @@
-import About from "./pages/About";
-import CareerPlan from "./pages/CareerPlan";
-import Certifications from "./pages/Certification";
-import Contact from "./pages/Contact";
-import Experience from "./pages/Experience";
-import Hero from "./pages/Hero";
-import Navbar from "./pages/Navbar";
-import Projects from "./pages/Projects";
-import ReflectiveJournal from "./pages/ReflectiveJournal";
-import Skills from "./pages/Skills";
+import About from "./components/About";
+import CareerPlan from "./components/CareerPlan";
+import Certifications from "./components/Certification";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import ReflectiveJournal from "./components/ReflectiveJournal";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
