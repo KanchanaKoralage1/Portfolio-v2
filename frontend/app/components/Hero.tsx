@@ -12,7 +12,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-bold leading-tight"
         >
-          Hello, I&apos;m <span className="gradient-text">Kanchana Koralage</span>
+          Hi, I&apos;m <span className="gradient-text">Kanchana Koralage</span>
         </motion.h1>
 
         <motion.p
