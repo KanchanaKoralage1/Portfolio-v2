@@ -3,6 +3,7 @@ import {
   FaReact,
   FaNodeJs,
   FaGithub,
+  FaGitlab,
   FaGitAlt,
   FaJava,
   FaPython,
@@ -89,10 +90,17 @@ export const skillCategories = [
         name: "ArgoCD",
         icon: SiArgo,
       },
-       {
+
+      {
         name: "GitHub",
         icon: FaGithub,
       },
+
+      {
+        name: "GitLab",
+        icon: FaGitlab,
+      },
+
     ],
   },
   {
@@ -390,6 +398,36 @@ export const projectSections = [
       "Projects focused on CI/CD pipelines, cloud-native architectures, Kubernetes, Docker, infrastructure automation, monitoring, and scalable deployments.",
 
     projects: [
+      {
+        title: "Python Rest API with Docker Kubernetes and CI/CD Pipeline",
+
+        description: [
+          "Developed a cloud-native Python FastAPI REST API application with separate frontend and backend services",
+          "Containerized frontend and backend applications using Docker and managed image versions through DockerHub",
+          "Configured Kubernetes Deployments, Services, and Helm charts for scalable multi-environment deployments",
+          "Built and automated a complete CI/CD pipeline using GitLab CI/CD for image build, push, and deployment workflows",
+          "Integrated GitHub with GitLab and implemented automated deployments using a self-hosted GitLab Runner.",
+          "Worked with DevOps tools and technologies including Docker, Kubernetes, Helm, GitLab CI/CD, Minikube, and Nginx."
+        ],
+
+        tech: [
+          "Python (FastAPI)",
+          "Docker",
+          "Kubernetes",
+          "GitLab CI/CD",
+          "Helm",
+          "Minikube",
+          "GitLab Runner"
+        ],
+
+        github:
+          "https://gitlab.com/KanchanaKoralage1/Cloud-Native-Python-REST-API-Platform-with-CI-CD-and-Kubernetes.git",
+
+        live: "#",
+
+        image: "/project/gitlabcicd.png",
+      },
+
       {
         title: "Python Task API with DevOps",
 
@@ -767,11 +805,25 @@ export const careerPlans = [
 export const certifications = [
 
   {
+    title: "100 Days of Cloud - Azure",
+
+    issuer: "KodeKloud",
+
+    year: "2026",
+
+    image: "/certifications/azurekodekloud.jpg",
+
+    credential: "https://engineer.kodekloud.com/certificate-verification/85b9e85a-2070-435b-9ba6-91e5f9f60e34",
+
+    description:
+      "I have successfully completed the 100 Days of Cloud (Azure) challenge by KodeKloud",
+  },
+  {
     title: "Linux - Level 1",
 
     issuer: "KodeKloud",
 
-    year: "2025",
+    year: "2026",
 
     image: "/certifications/linux.png",
 
