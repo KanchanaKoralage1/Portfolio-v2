@@ -681,6 +681,7 @@ export const experiences = [
       "Performed API testing and automation using Postman and Selenium.",
       "Collaborated with teams using GitHub, Jira, and Trello.",
       "Followed CI/CD workflows and version control best practices.",
+      "Followed the Software Development Life Cycle (SDLC) from requirements gathering and development to testing and deployment"
     ],
 
     technologies: [
@@ -805,6 +806,20 @@ export const careerPlans = [
 export const certifications = [
 
   {
+    title: "100 Days of Cloud - AWS",
+
+    issuer: "KodeKloud",
+
+    year: "2026",
+
+    image: "/certifications/awskodekloud.jpg",
+
+    credential: "https://engineer.kodekloud.com/certificate-verification/3317d9b4-0c5d-4f16-a605-5def4fd5aebe",
+
+    description:
+      "Excited to share that I have successfully completed the 100 Days of Cloud (AWS) challenge on KodeKloud",
+  },
+  {
     title: "100 Days of Cloud - Azure",
 
     issuer: "KodeKloud",
@@ -816,7 +831,7 @@ export const certifications = [
     credential: "https://engineer.kodekloud.com/certificate-verification/85b9e85a-2070-435b-9ba6-91e5f9f60e34",
 
     description:
-      "I have successfully completed the 100 Days of Cloud (Azure) challenge by KodeKloud",
+      "Excited to share that I have successfully completed the 100 Days of Cloud (Azure) challenge on KodeKloud",
   },
   {
     title: "Linux - Level 1",
